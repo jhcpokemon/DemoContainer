@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.github.jhcpokemon.democontainer">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.BitmapResizeDemoActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".EntryActivity" />
+        <activity
+            android:name=".EntryActivity"
+            android:theme="@android:style/Theme.Material.Light.DarkActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ImageSwitcherDemoActivity"
+            android:label="@string/title_activity_image_switcher_demo"
+            android:parentActivityName=".EntryActivity" />
+        <activity
+            android:name=".activity.ViewFlipperDemoActivity"
+            android:label="@string/title_activity_file_flipper_demo"
+            android:parentActivityName=".EntryActivity" />
+        <activity
+            android:name=".activity.VolleyDemoActivity"
+            android:label="@string/title_activity_volley_demo"
+            android:parentActivityName=".EntryActivity" />
+        <activity
+            android:name=".activity.CardView_RecyclerViewDemoActivity"
+            android:label="@string/title_activity_card_view__recycler_view_demo"
+            android:parentActivityName=".EntryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.github.jhcpokemon.democontainer.EntryActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ProcessStatusDemoActivity"
+            android:label="@string/title_activity_process_status_demo"
+            android:parentActivityName=".EntryActivity" />
+        <activity
+            android:name=".activity.RadioBoxDemoActivity"
+            android:label="@string/title_activity_radio_box_demo"
+            android:parentActivityName=".EntryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.github.jhcpokemon.democontainer.EntryActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ProgressBarDemoActivity"
+            android:label="@string/title_activity_progress_bar_demo"
+            android:parentActivityName=".EntryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.github.jhcpokemon.democontainer.EntryActivity" />
+        </activity>
+        <activity
+            android:name=".activity.HandlerDemoActivity"
+            android:label="@string/title_activity_handler_demo"
+            android:parentActivityName=".EntryActivity" />
+        <activity
+            android:name=".activity.HttpClientDemoActivity"
+            android:label="@string/title_activity_http_client_demo"
+            android:parentActivityName=".EntryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.github.jhcpokemon.democontainer.EntryActivity" />
+        </activity>
+        <activity
+            android:name=".activity.IntentDemoActivity"
+            android:label="@string/title_activity_intent_demo"
+            android:parentActivityName=".EntryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.github.jhcpokemon.democontainer.EntryActivity" />
+        </activity>
+        <activity
+            android:name=".activity.SecondActivity"
+            android:label="@string/title_activity_second"
+            android:parentActivityName=".activity.IntentDemoActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.github.jhcpokemon.democontainer.activity.IntentDemoActivity" />
+        </activity>
+        <activity
+            android:name=".activity.BlueToothDemoActivity"
+            android:label="@string/title_activity_blue_tooth_demo"
+            android:parentActivityName=".EntryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.github.jhcpokemon.democontainer.EntryActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ConfigAndSyncDemoActivity"
+            android:label="@string/title_activity_config_and_sync_demo"
+            android:parentActivityName=".EntryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.github.jhcpokemon.democontainer.EntryActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ServiceDemo"
+            android:label="@string/title_activity_service_demo"
+            android:parentActivityName=".EntryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.github.jhcpokemon.democontainer.EntryActivity" />
+        </activity>
+        <activity
+            android:name=".activity.BroadCastReceiverDemoActivity"
+            android:label="@string/title_activity_broad_cast_receiver_demo"
+            android:parentActivityName=".EntryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.github.jhcpokemon.democontainer.EntryActivity" />
+        </activity>
+        <activity
+            android:name=".activity.DialogDemoActivity"
+            android:label="@string/title_activity_dialog_demo"
+            android:parentActivityName=".EntryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.github.jhcpokemon.democontainer.EntryActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ContentProviderDemoActivity"
+            android:label="@string/title_activity_content_provider_demo"
+            android:parentActivityName=".EntryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EntryActivity" />
+        </activity>
+
+        <provider
+            android:name=".provider.MyContentProvider"
+            android:authorities="io.github.jhcpokemon.democontainer"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.DataStorageDemoActivity"
+            android:label="@string/title_activity_data_stroage_demo"
+            android:parentActivityName=".EntryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.github.jhcpokemon.democontainer.EntryActivity" />
+        </activity>
+        <activity
+            android:name=".activity.AnimationDemoActivity"
+            android:label="@string/title_activity_animation_demo"
+            android:parentActivityName=".EntryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.github.jhcpokemon.democontainer.EntryActivity" />
+        </activity>
+        <activity
+            android:name=".activity.LoaderDemoActivity"
+            android:label="@string/title_activity_loader_demo"
+            android:parentActivityName=".EntryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.github.jhcpokemon.democontainer.EntryActivity" />
+        </activity>
+        <activity
+            android:name=".activity.CustomViewDemoActivity"
+            android:label="@string/title_activity_custom_view_demo"
+            android:parentActivityName=".EntryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.github.jhcpokemon.democontainer.EntryActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ToolbarDemoActivity"
+            android:label="@string/title_activity_toolbar_demo"
+            android:parentActivityName=".EntryActivity"
+            android:theme="@style/AppTheme.Toolbar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.github.jhcpokemon.democontainer.EntryActivity" />
+        </activity>
+        <activity
+            android:name=".activity.Activity2"
+            android:parentActivityName=".activity.ToolbarDemoActivity"
+            android:theme="@android:style/Theme.Holo">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.NotificationDemoActivity"
+            android:label="@string/title_activity_notification_demo"
+            android:parentActivityName=".EntryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.github.jhcpokemon.democontainer.EntryActivity" />
+        </activity>
+        <activity
+            android:name=".activity.JsoupDemoActivity"
+            android:label="@string/title_activity_jsoup_demo"
+            android:parentActivityName=".EntryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.github.jhcpokemon.democontainer.EntryActivity" />
+        </activity>
+
+        <receiver
+            android:name=".receiver.MyReceiver1"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="200">
+                <action android:name="android.intent.action.MY_ACTION" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.MyReceiver2"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.MY_ACTION" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,40 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="io.github.jhcpokemon.democontainer.activity.VolleyDemoActivity">
+
+    <Button
+        android:id="@+id/send_json_req_btn"
+        style="@style/MyButtonStyle"
+        android:text="@string/send_json_request" />
+
+    <Button
+        android:id="@+id/post_req_btn"
+        style="@style/MyButtonStyle"
+        android:text="@string/send_post_request" />
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/net_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:src="@drawable/sample"/>
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">DemoContainer</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_image_switcher_demo">ImageSwitcherDemoActivity</string>
+    <string name="title_activity_file_flipper_demo">FileFlipperDemoActivity</string>
+    <string name="title_activity_volley_demo">VolleyDemoActivity</string>
+    <string name="send_json_request">Send Json Request</string>
+    <string name="send_post_request">Send Post Request</string>
+    <string name="title_activity_card_view__recycler_view_demo">CardView&amp;RecyclerViewDemoActivity</string>
+    <string name="title_activity_process_status_demo">ProcessStatusDemoActivity</string>
+    <string name="title_activity_radio_box_demo">RadioBoxDemoActivity</string>
+    <string name="add_10_percent">增加10%</string>
+    <string name="title_activity_progress_bar_demo">ProgressBarDemoActivity</string>
+    <string name="title_activity_handler_demo">HandlerDemoActivity</string>
+    <string name="title_activity_http_client_demo">HttpClientDemoActivity</string>
+    <string name="title_activity_intent_demo">IntentDemoActivity</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="title_activity_blue_tooth_demo">BlueToothDemoActivity</string>
+    <string name="hint">html会显示在这里</string>
+    <string name="title_activity_config_and_sync_demo">ConfigAndSyncDemoActivity</string>
+    <string name="title_activity_service_demo">ServiceDemo</string>
+    <string name="title_activity_broad_cast_receiver_demo">BroadCastReceiverDemoActivity</string>
+    <string name="title_activity_dialog_demo">DialogDemoActivity</string>
+    <string name="agree">agree</string>
+    <string name="disagree">disagree</string>
+    <string name="message">Main Message</string>
+    <string name="title_activity_content_provider_demo">ContentProviderDemoActivity</string>
+    <string name="title_activity_data_stroage_demo">DataStroageDemoActivity</string>
+    <string name="title_activity_animation_demo">AnimationDemoActivity</string>
+    <string name="action_search">Search</string>
+    <string name="title_activity_main">LoaderDemoActivity</string>
+    <string name="title_activity_loader_demo">LoaderDemoActivity</string>
+    <string name="title_activity_custom_view_demo">CustomViewDemoActivity</string>
+    <string name="title_activity_text_view_demo">TextViewDemo</string>
+    <array name="spinner">
+        <item>First</item>
+        <item>Second</item>
+        <item>Third</item>
+    </array>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="title_activity_sliding_view">SlidingViewActivity</string>
+    <string name="title_activity_grid_view">GridViewActivity</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="show_dialog">Show Dialog</string>
+    <string name="alert_dialog">Alert Dialog</string>
+    <string name="date_picker_dialog">Date Picker Dialog</string>
+    <string name="time_picker_dialog">Time Picker dialog</string>
+    <string name="hint_toolbar">Data from dialog</string>
+    <string name="positive">OK</string>
+    <string name="negative">Cancel</string>
+    <string name="check_box">Check Box</string>
+    <string name="frag_btn">Send</string>
+    <string name="to_activity_2">Activity 2</string>
+    <string name="title_activity_toolbar_demo">ToolbarDemoActivity</string>
+    <string name="title_activity_notification_demo">NotificationDemoActivity</string>
+    <string name="title_activity_jsoup_demo">JsoupDemoActivity</string>
+    <string name="text_view">From the notification</string>
+</resources>

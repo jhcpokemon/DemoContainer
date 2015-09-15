@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.github.jhcpokemon.democontainer.activity.ToolbarDemoActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tool_bar"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <RadioGroup
+            android:id="@+id/btn_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/alert_dialog_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/alert_dialog" />
+
+            <RadioButton
+                android:id="@+id/date_picker_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_picker_dialog" />
+
+            <RadioButton
+                android:id="@+id/time_picker_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time_picker_dialog" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/show_dialog_btn"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_group"
+            android:layout_marginTop="32dp"
+            android:text="@string/show_dialog"
+            android:textAllCaps="false" />
+
+        <View
+            android:id="@+id/hr"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_below="@id/show_dialog_btn"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="32dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hr"
+            android:hint="@string/hint"
+            android:textSize="32sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/to_activity_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/relative_layout"
+        android:layout_below="@id/relative_layout"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginTop="24dp"
+        android:text="@string/to_activity_2"
+        android:textAllCaps="false" />
+
+</RelativeLayout>
