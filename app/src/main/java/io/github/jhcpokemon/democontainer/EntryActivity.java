@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import java.util.ArrayList;
 
 import io.github.jhcpokemon.democontainer.activity.AnimationDemoActivity;
+import io.github.jhcpokemon.democontainer.activity.BatteryDemoActivity;
 import io.github.jhcpokemon.democontainer.activity.BitmapResizeDemoActivity;
 import io.github.jhcpokemon.democontainer.activity.BlueToothDemoActivity;
 import io.github.jhcpokemon.democontainer.activity.BroadCastReceiverDemoActivity;
@@ -37,7 +38,7 @@ import io.github.jhcpokemon.democontainer.activity.VolleyDemoActivity;
 /**
  * The entry of the full demo
  */
-public class EntryActivity extends ListActivity implements AdapterView.OnItemClickListener{
+public class EntryActivity extends ListActivity implements AdapterView.OnItemClickListener {
     Intent intent;
 
     @Override
@@ -68,7 +69,8 @@ public class EntryActivity extends ListActivity implements AdapterView.OnItemCli
         list.add("ViewFlipperDemo");
         list.add("VolleyDemo");
         list.add("Card&RecyclerViewDemo");
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,list);
+        list.add("BatteryDemo");
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, list);
         setListAdapter(adapter);
         getListView().setOnItemClickListener(this);
     }
@@ -80,7 +82,7 @@ public class EntryActivity extends ListActivity implements AdapterView.OnItemCli
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        switch (position){
+        switch (position) {
             case 0:
                 startActivity(ProcessStatusDemoActivity.class);
                 break;
@@ -152,8 +154,10 @@ public class EntryActivity extends ListActivity implements AdapterView.OnItemCli
                 break;
             case 23:
                 startActivity(CardView_RecyclerViewDemoActivity.class);
-            default:
                 break;
+            case 24:
+                startActivity(BatteryDemoActivity.class);
+            default:
         }
     }
 

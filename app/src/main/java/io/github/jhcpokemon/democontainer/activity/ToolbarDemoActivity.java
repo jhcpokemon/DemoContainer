@@ -56,7 +56,6 @@ public class ToolbarDemoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ToolbarDemoActivity.this, Activity2.class);
-                assert intent.resolveActivity(getPackageManager()) != null;
                 startActivity(intent);
             }
         });
