@@ -2,7 +2,6 @@ package io.github.jhcpokemon.democontainer.activity;
 
 import android.annotation.TargetApi;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
 import android.os.Build;
 import android.os.Bundle;
@@ -18,6 +17,7 @@ import android.widget.TextView;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import io.github.jhcpokemon.democontainer.R;
+import io.github.jhcpokemon.democontainer.util.ResizeImage;
 
 public class BitmapResizeDemoActivity extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener {
     DisplayMetrics metrics = new DisplayMetrics();
@@ -41,7 +41,7 @@ public class BitmapResizeDemoActivity extends AppCompatActivity implements SeekB
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bitmap_resize);
         ButterKnife.bind(this);
-        bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.sample);
+        bitmap = ResizeImage.decodeSampledBitmapFromResource(getResources(), R.drawable.sample, 200, 271);
         originWidth = bitmap.getWidth();
         imageView.setImageResource(R.drawable.sample);
         getWindowManager().getDefaultDisplay().getMetrics(metrics);

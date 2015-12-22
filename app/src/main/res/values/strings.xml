@@ -59,4 +59,5 @@
     <string name="text_view">From the notification</string>
     <string name="title_activity_broswer_start_demo">BroswerStartDemoActivity</string>
     <string name="title_activity_battery_demo">BatteryDemoActivity</string>
+    <string name="title_activity_menu_demo">MenuDemoActivity</string>
 </resources>

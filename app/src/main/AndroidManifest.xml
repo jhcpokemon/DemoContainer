@@ -271,6 +271,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="io.github.jhcpokemon.democontainer.EntryActivity" />
         </activity>
+        <activity
+            android:name=".activity.MenuDemoActivity"
+            android:label="@string/title_activity_menu_demo"
+            android:parentActivityName=".EntryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.github.jhcpokemon.democontainer.EntryActivity" />
+        </activity>
     </application>
 
 </manifest>

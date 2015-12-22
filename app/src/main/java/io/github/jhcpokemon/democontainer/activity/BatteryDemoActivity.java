@@ -54,7 +54,7 @@ public class BatteryDemoActivity extends AppCompatActivity {
         Intent batteryIntent = getApplicationContext().registerReceiver(null, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
         int level = batteryIntent.getIntExtra(BatteryManager.EXTRA_LEVEL, -1);
         int scale = batteryIntent.getIntExtra(BatteryManager.EXTRA_SCALE, -1);
-        int perct = (level / scale) * 100;
-        textView.setText(perct);
+        int perfect = (level / scale) * 100;
+        textView.setText(perfect);
     }
 }
