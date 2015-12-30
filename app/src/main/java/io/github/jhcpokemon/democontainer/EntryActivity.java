@@ -28,6 +28,7 @@ import io.github.jhcpokemon.democontainer.activity.JsoupDemoActivity;
 import io.github.jhcpokemon.democontainer.activity.LoaderDemoActivity;
 import io.github.jhcpokemon.democontainer.activity.MenuDemoActivity;
 import io.github.jhcpokemon.democontainer.activity.NotificationDemoActivity;
+import io.github.jhcpokemon.democontainer.activity.OpenGLDemoActivity;
 import io.github.jhcpokemon.democontainer.activity.ProcessStatusDemoActivity;
 import io.github.jhcpokemon.democontainer.activity.ProgressBarDemoActivity;
 import io.github.jhcpokemon.democontainer.activity.RadioBoxDemoActivity;
@@ -72,6 +73,7 @@ public class EntryActivity extends ListActivity implements AdapterView.OnItemCli
         list.add("Card&RecyclerViewDemo");
         list.add("BatteryDemo");
         list.add("MenuDemo");
+        list.add("OpenGLDemo");
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, list);
         setListAdapter(adapter);
         getListView().setOnItemClickListener(this);
@@ -162,6 +164,9 @@ public class EntryActivity extends ListActivity implements AdapterView.OnItemCli
                 break;
             case 25:
                 startActivity(MenuDemoActivity.class);
+                break;
+            case 26:
+                startActivity(OpenGLDemoActivity.class);
             default:
         }
     }

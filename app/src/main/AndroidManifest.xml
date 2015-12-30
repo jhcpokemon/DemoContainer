@@ -9,6 +9,10 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.BATTERY_STATS" />
 
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
     <application
         android:name=".App"
         android:allowBackup="true"
@@ -275,6 +279,16 @@
             android:name=".activity.MenuDemoActivity"
             android:label="@string/title_activity_menu_demo"
             android:parentActivityName=".EntryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.github.jhcpokemon.democontainer.EntryActivity" />
+        </activity>
+        <activity
+            android:name=".activity.OpenGLDemoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_open_gldemo"
+            android:parentActivityName=".EntryActivity"
+            android:theme="@style/FullscreenTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="io.github.jhcpokemon.democontainer.EntryActivity" />
