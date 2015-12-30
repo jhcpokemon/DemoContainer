@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:configure="io.github.jhcpokemon.democontainer.provider.AppWidgetConf"
+    android:initialLayout="@layout/app_widget_view"
+    android:minHeight="64dp"
+    android:minResizeHeight="64dp"
+    android:minResizeWidth="64dp"
+    android:minWidth="64dp"
+    android:previewImage="@drawable/ange"
+    android:resizeMode="horizontal|vertical"
+    android:updatePeriodMillis="3000"
+    android:widgetCategory="home_screen"></appwidget-provider>
